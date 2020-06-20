@@ -2,7 +2,8 @@ FROM ubuntu
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update \
-    && apt-get install -y build-essential wget libfontconfig1 \
+    && apt-get install -y build-essential wget libfontconfig1 perl \
+    && apt-get -y autoremove \
     && rm -rf /var/lib/apt/lists/*; \
     wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz; \
     mkdir /install-tl-unx; \
