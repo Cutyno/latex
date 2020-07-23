@@ -8,4 +8,6 @@ RUN  /install-tl-unx/install-tl -no-cls -profile /install-tl-unx/texlive.profile
      apt-get purge -y wget build-essential && \
      apt-get autoremove -y
 
+RUN echo "main_memory=12000000" >> /usr/local/texlive/texmf.cnf && fmtutil-sys --all
+
 ENV PATH="/usr/local/texlive/bin/x86_64-linux:${PATH}"
