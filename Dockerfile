@@ -18,7 +18,7 @@ COPY config.profile /install-tl-unx/texlive.profile
 # Install TexLive
 RUN  /install-tl-unx/install-tl -no-cls -profile /install-tl-unx/texlive.profile; \
      rm -r /install-tl-unx; \
-     apt-get purge -y wget build-essential && \
+     apt-get purge -y wget && \
      apt-get autoremove -y
 
 ENV PATH="/usr/local/texlive/bin/x86_64-linux:${PATH}" HOME=/data
