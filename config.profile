@@ -14,7 +14,7 @@ instopt_adjustpath 0
 instopt_adjustrepo 1
 instopt_letter 0
 instopt_portable 0
-instopt_write18_restricted 1
+instopt_write18_restricted 0
 tlpdbopt_autobackup 0
 tlpdbopt_backupdir tlpkg/backups
 tlpdbopt_create_formats 1
