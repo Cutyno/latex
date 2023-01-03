@@ -3,7 +3,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # Install essential
 RUN apt-get update \
-    && apt-get install -y build-essential wget libfontconfig1 perl \
+    && apt-get install -y build-essential wget libfontconfig1 perl ghostscript \
     && apt-get -y autoremove \
     && rm -rf /var/lib/apt/lists/*; \
     wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz; \
